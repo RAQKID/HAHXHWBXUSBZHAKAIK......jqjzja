@@ -13,7 +13,7 @@ const command = 'apikey';
 const allowedChannelIds = process.env.ALLOWED_CHANNEL_IDS.split(',');
 
 // Read predefined messages from .env and split them into an array
-const predefinedMessages = process.env.PREDEFINED_MESSAGES.split(';');
+const predefinedMessages = process.env.PREDEFINED_MESSAGES.split(',');
 
 client.once('ready', () => {
     console.log('Bot is online!');
